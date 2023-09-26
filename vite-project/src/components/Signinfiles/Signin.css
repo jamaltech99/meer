@@ -1,0 +1,135 @@
+.container-signin{
+    min-width: 100%;
+    height: 700px;
+    background: url(/src/assets/Signin-assets/Signin-background-meer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signin-box{
+   min-width:450px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow:5px 5px 10px #1a1a1a;
+}
+.signin-logo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+.signin-logo img{
+width: 120px;
+}
+form{
+    margin:40px 0 0 10%;
+
+}
+form input{
+    width: 70%;
+    height: 40px;
+    background-color: #f8f8f8;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+}
+form input:focus{
+    outline: 1px solid #f17700;
+    filter: drop-shadow(1px 1px 1px #f17700);
+    border: none;
+}
+form label{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-style: italic;
+}
+form label sup{
+    font-weight: bold;
+}
+/* forget password */
+.forget-password > a > p{
+    font-size: 0.8em;
+    color: black;
+    margin: 20px 0 0 10%;
+}
+.forget-password a{
+    text-decoration:none ;
+}
+.forget-password a:hover{
+    text-decoration : underline;
+    text-decoration-color:black ;    
+}
+/* button */
+.button-signin > a{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.button-signin > a >button {
+    height: 40px;
+    width: 60%;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.button-signin > a >button:hover{
+background-color: #f17700;
+border: none;
+}
+/* signin-line */
+.signin-line{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+hr{
+    width: 30%;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+.signin-line sup{
+font-size: 16px;
+font-style: italic;
+position: relative;
+top: 20px;
+margin: 0 20px;
+}
+/* signin-icons */
+.google-icon{
+    width: 100%;
+    margin: 10px 0 0 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.google-icon > a > img{
+    width:40px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #f8f8f8;
+}
+.google-icon img:hover{
+    filter: drop-shadow(2px 2px 5px #f17700);
+}
+
+/* responsiveness */
+
+@media only screen and (max-width :700px) {
+    .signin-box{
+        min-width:300px ;
+    }
+    form input{
+        width: 80%;
+    }
+}

@@ -1,0 +1,247 @@
+/* about-heading & footer size */
+.footerheadings{
+    margin-top: 3%;
+}
+.logo-img-footer img{
+    max-width: 130px;
+}
+footer{
+    background-color: #fff;
+    border-top: 1px solid #f5f5f5;
+}
+.about-heading{
+    width: 200px;
+    height: 40px;
+    border-bottom: 2px solid #806534;
+    font-size: 20px;
+    font-weight: 300;
+    color: #1a1a1a;
+}
+.about{
+    margin-left: 10px;
+}
+.about-para{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-flex;
+    flex-direction: column;
+    color: #000;
+}
+.about-para > a > p:hover{
+    color:#f17700;
+    cursor: pointer;
+}
+.about-para a{
+    text-decoration: none;
+    color: #000;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+.customer-care-heading{
+    width: 200px;
+    height: 40px;
+    border-bottom: 2px solid #806534;
+    font-size: 20px;
+    font-weight: 300;
+    color: #000;
+}
+.customer-care-para{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-flex;
+    flex-direction: column;
+    color: #000;
+}
+.customer-care-para > a > p:hover{
+    color:#f17700;
+    cursor: pointer;
+}
+.customer-care-para a{
+    text-decoration: none;
+    color: #000;
+    max-width:fit-content ;
+    max-height: fit-content;
+}
+#para-privacy-policy{
+    display: none;
+}
+.get-intouch{
+    margin-right: 10px;
+}
+.get-intouch-heading{
+    width: 200px;
+    height: 40px;
+    border-bottom: 2px solid #806534;
+    font-size: 20px;
+    font-weight: 300;
+    color: #1a1a1a;
+}
+.get-intouch-para{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-flex;
+    flex-direction: column;
+    color: #000;
+}
+.get-intouch-para > a > p:hover{
+    color:#f17700;
+    cursor: pointer;
+}
+.get-intouch-para a{
+    text-decoration:none ;
+    color : #000 !important;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+#contact-button{
+    width: 150px;
+    height: 40px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+}
+#contact-button:hover{
+    background-color: #f17700;
+    border: none;
+}
+.subscribe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+.subscribe input{
+    min-width:20%;
+    height: 40px;
+    font-size: 0.9em;
+    border: 1px solid #000;
+    border-left: none;
+}
+.subscribe input:focus{
+    outline: none;
+}
+.subscribe button{
+    min-width: 7%;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.subscribe i{
+    border: 1px solid #1a1a1a;
+    padding: 11px;
+    border-right:none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* Last div */
+.lastdiv{
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid #808080;
+    margin-top: 50px;
+    padding-top: 15px;
+}
+/* copyrightdiv */
+.copyright p{
+    color: #000;
+}
+.copyright> p > span > a{
+    text-decoration: none;
+    color: #000;
+}
+.copyright> p > span > a:hover{
+    text-decoration: none;
+    color: #f17700;
+}
+#copyright-color-change:hover{
+color:  #f17700;
+cursor:pointer;
+}
+/* social media icon */
+.social-media-icon {
+    gap: 5px;
+}
+.social-media-icon a{
+    text-decoration: none;
+}
+/* facebook */
+.facebook{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 2px solid #1a1a1a;
+    color: #1a1a1a;
+}
+.facebook:hover{
+    color: #f17700;
+    border-color: #f17700;
+}
+/* instagram */
+.instagram{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 2px solid #1a1a1a;
+    color:  #1a1a1a;
+}
+.instagram:hover{
+    color: #f17700;
+    border-color: #f17700;
+}
+/* twitter */
+.twitter{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 2px solid #1a1a1a;
+    color:  #1a1a1a;
+}
+.twitter:hover{
+    color: #f17700;
+    border-color: #f17700;
+}
+/*youtube */
+.youtube{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 2px solid #1a1a1a;
+    color: #1a1a1a;
+}
+.youtube:hover{
+    color: #f17700;
+    border-color: #f17700;
+}
+/* policy */
+.privacy-policy{
+    color: #000
+}
+#privacy-hover:hover{
+    color: #d78703;
+    cursor: pointer;
+}
+/* responsiveness */
+@media screen and (max-width :800px){
+.privacy-policy{
+    display: none;
+}
+#para-privacy-policy{
+    display: block !important ;    
+}
+.get-intouch{
+    margin-left: 25px;
+}
+}
+@media screen and (max-width :650px){
+.copyright{
+    display: none;
+}
+}

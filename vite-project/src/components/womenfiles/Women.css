@@ -1,0 +1,86 @@
+.cards-container {
+    display: flex;
+    justify-content:space-between;
+    padding-top: 30px;
+  }
+  /* banner */
+  .women-banner{
+    width: 94%;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .women-banner img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  /* cards */
+ 
+.card-custom {
+    width: 300px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.card-custom img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.textcontent {
+    position: absolute;
+    border-radius: 5px;
+    bottom: -30%; /* Initially, hide the content below the card-custom */
+    left: 0;
+    right: 0;
+    background-color: rgba(256,256,256, 0.5);
+    color: black;
+    padding: 20px;
+    transition: 0.6s;
+}
+
+.card-custom:hover .textcontent {
+    bottom: 0; /* Move the content up on hover */
+}
+
+.card-custom {
+    transition: 0.8s ease;
+}
+
+.card-custom:hover {
+    transform: scale(1.05);
+}
+.textcontent h2{
+    font-size: 22px;
+    font-style: italic;
+}
+.textcontent h5{
+    font-size: 18px;
+}
+.textcontent button{
+    width: 80%;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.textcontent button:hover{
+    background-color:#f17700 ;
+}
+/* responsiveness */
+@media only screen and (max-width:650px) {
+    .cards-container{
+        background: url(/src/assets/Women-assets/women-products-background.svg);
+    }
+    .women-banner{
+        display: none;
+    }
+}
+  
+  

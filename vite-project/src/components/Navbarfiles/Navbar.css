@@ -1,0 +1,124 @@
+::selection {
+    background-color:#f17700;
+    color: white;
+}
+.nav-container {
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    position: relative;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+/* navbar-logo */
+.nav-img {
+    width: fit-content;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.nav-img> a >img {
+    width: 8rem;
+}
+
+/* nav-links */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #1a1a1a;
+    position: absolute;
+    top: 45%;
+    right: 45%;
+    left: 35%;
+}
+ul>li>a {
+    text-decoration: none;
+    color:	 #1a1a1a ;
+}
+ul>li>a:hover{
+    color: #f17700;
+    border-bottom: 3px solid #f17700;
+    padding-bottom: 3px;
+}
+
+/* icons */
+.navbar-icons {
+    position: absolute;
+    top: 40%;
+    right: 3%;
+    gap: 1vw;
+}
+
+.navbar-icons span {
+    font-size: 12px;
+}
+.navbar-icons span:hover{
+    border-bottom: 1px solid #000;
+
+}
+
+.navbar-icons a {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+.navbar-icons svg {
+    fill: 	#1a1a1a !important;
+}
+/* cart-counter */
+.cart-icon-svg{
+    position: relative;
+}
+.product-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 32px;
+    left: 14px;
+    font-size: 12px;
+  }
+/* responsiveness */
+@media only screen and (max-width: 768px) {
+    .nav-container {
+        height: 150px;
+    }
+    .nav-img{
+        width: 100%;
+        height: fit-content;
+        align-items: flex-start;
+        margin-top: 2vh;
+        margin-left: 0;
+        display: inline-flex;
+    }
+    .nav-img > a >img{
+        width: 8rem;
+    }
+    .navbar-icons{
+        top:50%;left: 40%;right: 40%;
+        gap: 20%;
+    }
+    ul {
+        bottom: 20%;top: 80%;
+        justify-content: center;
+        gap: 40%;
+    }
+    ul > li > a{
+        font-size: medium;
+        padding: 0.5vh 0.5vw;
+    }
+    
+
+}
+
+  
